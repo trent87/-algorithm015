@@ -29,8 +29,8 @@ public class MergeTwoSortedLinkedList {
     }
 
     /**
-     * 使用哑节点的方式实现
-     *
+     * 暴力法：逐一比较两个链表各个节点数据的大小
+     * 引入哑节点
      * @param l1 第一个链表
      * @param l2 第二个链表
      * @return 合并后的有序链表
@@ -48,7 +48,6 @@ public class MergeTwoSortedLinkedList {
             }
             prev = prev.next;
         }
-        //TODO 解决多一个元素的情况
         prev.next = l1 != null ? l1 : l2;
         return preNode.next;
     }
