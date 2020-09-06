@@ -1,4 +1,4 @@
-#HashMap小结  
+# HashMap小结  
 hashmap是java中常用的一种数据结构，是Map的基本实现类，下面从HashMap内部数据结构，应用场景，注意点几方面小结HashMap。 
 下面的分析均基于jdk11的版本 
 ## 1.内部数据结构  
