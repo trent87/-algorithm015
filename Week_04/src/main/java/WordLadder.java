@@ -1,5 +1,8 @@
 import java.util.*;
 
+/**
+ * 词语接龙
+ */
 public class WordLadder {
 
     static class Pair<K, V> {
@@ -14,6 +17,7 @@ public class WordLadder {
 
     /**
      * 词语接龙
+     * 广度优先遍历
      * @param beginWord 起始词
      * @param endWord 结束词
      * @param wordList 词典
@@ -47,8 +51,7 @@ public class WordLadder {
     }
 
     /**
-     * 生成通配单词
-     *
+     * 生成通配单词，并填充到词典
      * @param word 单词
      */
     private void fillWildcardWordDict(String word, Map<String, List<String>> wildChardWordDict) {
